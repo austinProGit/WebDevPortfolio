@@ -3,7 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 
 const Contact = () => (
   <div id='contact-form-container'>
-    <form id='contact' className='contact-form  mx-auto' action="https://formspree.io/lee_austin@columbusstate.edu" method="POST">
+    <form id='contact' className='contact-form  mx-auto' action="https://formspree.io/f/xyyaglza" method="POST">
       <h2 className='section-title'>Contact Me</h2>
 
       <Form.Group controlId="formBasicEmail" className="mb-3">

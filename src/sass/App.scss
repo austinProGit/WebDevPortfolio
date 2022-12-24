@@ -1,3 +1,45 @@
+// Root
+
+:root {
+    --dark-mode-gray: rgb(64, 64 ,64);
+    --light-mode-offwhite: #56585a4d;
+  }
+
+//   Navbar
+
+#navigation-bar {
+    color: white !important;
+    background-color: var(--dark-mode-gray);
+}
+
+.navbar-brand {
+    margin-left: 50px !important;
+    font-size: xx-large;
+    color: white;
+}
+
+.navbar-links {
+    margin-right: 200px !important;
+    font-size: xx-large;
+}
+
+.navbar-link {
+    color: white;
+}
+
+// Portrait
+
+  .portrait-container {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 2em;
+}
+
+.portrait {
+    border-radius: 80px;
+}
+
 .section-title {
     font-size: 35px;
     font-weight: bold;
@@ -6,9 +48,78 @@
     margin-top: 1em;
 }
 
+// About
+
+#light .about-me-card {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    background-color: var(--light-mode-offwhite);
+    width: 50%;
+    max-width: 1000px;
+    min-width: 200px;
+    font-size: x-large;
+}
+
+#dark .about-me-card {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    background-color: var(--dark-mode-gray);
+    width: 50%;
+    max-width: 1000px;
+    min-width: 200px;
+    font-size: x-large;
+    color: white;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .about-me-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .about-me-card:nth-child(2) {
+      margin-top: 20px;
+    }
+}
+
+// Skills
+
+#light .skills-container {
+    box-shadow: 5px 5px 5px 10px grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: var(--light-mode-offwhite);
+    color: black;
+}
+
+#dark .skills-container {
+    box-shadow: 5px 5px 5px 10px grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: var(--dark-mode-gray);
+    color: white;
+}
+
 .skill-bar {
-    height: 30px !important;
-    box-shadow: 10px 10px 5px grey !important;
+    height: 30px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 @media screen and (max-width: 1630px) {
@@ -24,18 +135,8 @@
     font-weight: bold;
 }
 
-.skills-container {
-    box-shadow: 5px 5px 5px 10px grey !important;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
-    max-width: 1000px;
-    border-radius: 10px;
-    background-color: #f8f9fa;
-}
-
 .skill-row {
-    margin: 10px 0px 15px 0px !important;
+    margin: 10px 0px 15px 0px;
 }
 
 .skills-container img {
@@ -43,102 +144,107 @@
     float: left;
 }
 
-.contact-form {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px grey !important;
-    margin-top: 50px !important;
-    margin-bottom: 50px;
-    width: 50% !important;
-    font-size: x-large;
-}
+// Projects
 
-html {
-    scroll-padding-top: 6rem;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar-brand {
-    margin-left: 50px !important;
-    font-size: xx-large;
-}
-
-.navbar-links {
-    margin-right: 200px !important;
-    font-size: xx-large;
-}
-
-.about-me-card {
-    margin: 1em;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px grey !important;
-    background-color: #f8f9fa;
-    width: 50%;
-    max-width: 1000px;
-    min-width: 200px;
-    font-size: x-large;
-}
-
-.about-me-container {
-    display: flex;
-    justify-content: center;
-}
-
-.portrait-container {
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    margin-top: 2em;
-}
-
-.portrait {
-    border-radius: 80px;
-}
-@media (max-width: 1200px) {
-    .about-me-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .about-me-card:nth-child(2) {
-      margin-top: 20px;
-    }
-  }
-  
-.projects-container {
-    box-shadow: 5px 5px 5px 10px grey !important;
+#light #projects-container {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 90%;
-    border-radius: 10px;
-    background-color: #f8f9fa;
+    width: 95%;
+    background-color: white;
+    color: black;
 }
 
-.project {
-    box-shadow: 2px 2px 2px 2px grey !important;
+#dark #projects-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    background-color: black;
+    color: white;
+}
+
+#light .project {
+    box-shadow: 5px 5px 5px 5px grey;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: white;
+    margin: 20px;
+    background-color: var(--light-mode-offwhite);
+    color: black;
+}
+
+#dark .project {
+    box-shadow: 5px 5px 5px 5px grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: var(--dark-mode-gray);
+    color: white;
 }
 
 .project-description {
     font-size: 30px;
+}
+
+.project-screenshot {
+    max-width: 100%;
+}
+
+// Contact
+
+#light .contact-form {
+    padding: 20px;
+    background-color: var(--light-mode-offwhite);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    margin-top: 50px;
+    width: 50%;
+    font-size: x-large;
+}
+
+#dark .contact-form {
+    padding: 20px;
+    background-color: var(--dark-mode-gray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    margin-top: 50px;
+    width: 50%;
+    font-size: x-large;
+    color: white;
+}
+
+#contact-form-container {
+    padding-bottom: 50px;
+}
+
+// Footer
+
+#footer {
+    color: white;
+    text-align: center;
+    background-color: var(--dark-mode-gray);
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+// Scrolling behavior
+
+// #about, #skills, #projects, #contact {
+//     scroll-padding-top: 100px;
+// }
+
+html {
+    scroll-padding-top: 100px;
+}
+
+
+#light {
+    background-color: white;
+}
+
+#dark {
+    background-color: black;
 }

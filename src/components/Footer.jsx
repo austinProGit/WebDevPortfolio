@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer">
+    <footer id="footer">
       <p className='mb-1'>Copyright &copy; {currentYear}</p>
       <p className='mb-1'>Icons by <a href="https://icons8.com">Icons8</a></p>
       <p className='mb-0'>

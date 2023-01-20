@@ -4,11 +4,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ReactSwitch from 'react-switch';
 
 const NavigationBar = (props) => {
+  const toggleTheme = () => {
+    props.toggleTheme();
+  };
+
   return (
     <>
       <Navbar id='navigation-bar' className='sticky-top'>
         <div className="navbar-brand">
-            <Navbar.Brand href="">
+            <Navbar.Brand id='brand' href="">
               Austin Lee, Web Developer
           </Navbar.Brand>
         </div>
@@ -21,7 +25,7 @@ const NavigationBar = (props) => {
             <Nav.Link className='navbar-link' href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <ReactSwitch onChange={props.toggleTheme} checked={props.theme === 'dark'}></ReactSwitch>
+        <ReactSwitch onChange={toggleTheme} checked={props.theme === 'dark'}></ReactSwitch>
       </Navbar>
     </>
   );

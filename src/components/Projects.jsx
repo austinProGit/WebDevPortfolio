@@ -10,7 +10,7 @@ import Scheduler from './Projects/Scheduler';
 
 const Projects = (props) => (
     <>
-        <div id='projects'>
+        <div id='projects' className='scroll-padded-item'>
             <Container fluid id='projects-container'>
                 <Row>
                     <Col><h3 className='section-title' id='projects-title'>Projects</h3></Col>

@@ -5,7 +5,7 @@ import '../sass/App.scss';
 
 const AboutMe = () => (
   <>
-  <div id='about' className='portrait-container'>
+  <div id='about' className='portrait-container scroll-padded-item'>
     <img className='portrait' src={portrait} alt="" />
   </div>
   <div className='about-me-container'>
@@ -14,7 +14,7 @@ const AboutMe = () => (
         <Card.Title className='section-title'>Who I Am</Card.Title>
         <Card.Text>
           I am a junior web developer with a passion for creating user-friendly, 
-          visually appealing websites and applications. I am also interested in 
+          visually appealing websites and apps. I am also interested in 
           exploring the potential applications of AI in web development. 
         </Card.Text>
       </Card.Body>
@@ -24,7 +24,7 @@ const AboutMe = () => (
         <Card.Title className='section-title'>What I Do</Card.Title>
         <Card.Text>
           Whether creating simple content-managed websites using wordpress, 
-          complex apps using React, or working on Enterprise applications 
+          apps using React, or working on Enterprise applications 
           using complex tech stacks, I always find great satisfaction in 
           producing professional content on the web. Find a sample of my 
           skills and projects below.

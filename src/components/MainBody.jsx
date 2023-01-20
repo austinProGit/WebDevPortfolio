@@ -7,7 +7,7 @@ import React from 'react';
 
 function MainBody(){
   return (
-    <div>
+    <div className=''>
       <AboutMe />
       <Skills />
       <Projects />

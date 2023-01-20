@@ -20,7 +20,7 @@ import wordPressSVG from '../images/wordpress.svg';
 
 const Skills = () => (
     <>
-    <Container id='skills' className='skills-container mx-auto'>
+    <Container id='skills' className='skills-container mx-auto scroll-padded-item'>
         <Row>
             <Col><h3 className='section-title'>Skills</h3></Col>
         </Row>

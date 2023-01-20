@@ -5,10 +5,10 @@
     --light-mode-offwhite: #56585a4d;
   }
 
-//   Navbar
+// Navbar
 
 #navigation-bar {
-    color: white !important;
+    color: white;
     background-color: var(--dark-mode-gray);
 }
 
@@ -25,6 +25,18 @@
 
 .navbar-link {
     color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-link:hover, .navbar-link.active {
+    color: white !important;
+    text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray;
+    transform: scale(1.1);
+
+}
+
+#brand {
+    pointer-events: none;
 }
 
 // Portrait
@@ -58,7 +70,7 @@
     background-color: var(--light-mode-offwhite);
     width: 50%;
     max-width: 1000px;
-    min-width: 200px;
+    min-width: 400px;
     font-size: x-large;
 }
 
@@ -70,7 +82,7 @@
     background-color: var(--dark-mode-gray);
     width: 50%;
     max-width: 1000px;
-    min-width: 200px;
+    min-width: 400px;
     font-size: x-large;
     color: white;
 }
@@ -101,6 +113,7 @@
     margin-bottom: 50px;
     width: 50%;
     max-width: 1000px;
+    min-width: 500px;
     border-radius: 10px;
     background-color: var(--light-mode-offwhite);
     color: black;
@@ -112,6 +125,7 @@
     margin-bottom: 50px;
     width: 50%;
     max-width: 1000px;
+    min-width: 500px;
     border-radius: 10px;
     background-color: var(--dark-mode-gray);
     color: white;
@@ -162,6 +176,11 @@
     color: white;
 }
 
+// .project {
+//     max-width: 500px;
+//     margin: 0 auto;
+// }
+
 #light .project {
     box-shadow: 5px 5px 5px 5px grey;
     margin-top: 10px;
@@ -190,6 +209,12 @@
     max-width: 100%;
 }
 
+@media (max-width: 1450px) {
+    .project-row {
+      flex-direction: column;
+    }
+  }
+
 // Contact
 
 #light .contact-form {
@@ -199,6 +224,7 @@
     box-shadow: 5px 5px 5px 5px grey;
     margin-top: 50px;
     width: 50%;
+    min-width: 500px;
     font-size: x-large;
 }
 
@@ -209,6 +235,7 @@
     box-shadow: 5px 5px 5px 5px grey;
     margin-top: 50px;
     width: 50%;
+    min-width: 500px;
     font-size: x-large;
     color: white;
 }
@@ -232,14 +259,11 @@
 
 // Scrolling behavior
 
-// #about, #skills, #projects, #contact {
-//     scroll-padding-top: 100px;
-// }
-
-html {
-    scroll-padding-top: 100px;
+.scroll-padded-item {
+    scroll-margin-top: 100px;
 }
 
+// Light/Dark Mode
 
 #light {
     background-color: white;

@@ -13,14 +13,15 @@
 }
 
 .navbar-brand {
-    margin-left: 50px !important;
+    margin-left: 50px;
     font-size: xx-large;
     color: white;
 }
 
 .navbar-links {
-    margin-right: 200px !important;
+    margin-right: 200px;
     font-size: xx-large;
+    margin-left: 50px;
 }
 
 .navbar-link {
@@ -28,11 +29,13 @@
     transition: all 0.1s ease-in-out;
 }
 
-.navbar-link:hover, .navbar-link.active {
-    color: white !important;
-    text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray;
-    transform: scale(1.1);
+.navbar-nav .nav-link.active {
+    color: white;
+}
 
+.navbar-link:hover, .navbar-link.active {
+    color: white;
+    text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px gray;
 }
 
 #brand {
@@ -41,7 +44,7 @@
 
 // Portrait
 
-  .portrait-container {
+.portrait-container {
     display: flex;
     justify-content: center;
     height: 500px;
@@ -175,11 +178,6 @@
     background-color: black;
     color: white;
 }
-
-// .project {
-//     max-width: 500px;
-//     margin: 0 auto;
-// }
 
 #light .project {
     box-shadow: 5px 5px 5px 5px grey;

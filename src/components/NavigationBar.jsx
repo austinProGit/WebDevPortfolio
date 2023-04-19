@@ -10,12 +10,10 @@ const NavigationBar = (props) => {
 
   return (
     <>
-      <Navbar id='navigation-bar' className='sticky-top'>
-        <div className="navbar-brand">
-            <Navbar.Brand id='brand' href="">
-              Austin Lee, Web Developer
-          </Navbar.Brand>
-        </div>
+      <Navbar id='navigation-bar' className='sticky-top' expand="md">
+        <Navbar.Brand id='brand'>
+          Austin Lee, Web Developer
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-end navbar-links" style={{ width: "100%" }}>

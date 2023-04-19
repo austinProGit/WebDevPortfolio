@@ -4,20 +4,17 @@ import SchedulerScreenshot from '../../images/Scheduler.png';
 const Scheduler = () => {
 
   return (
-    // title
-    // description
-    // skills
-    // hosted link
-    // repo
     <>
     <h2 className='section-title'>Scheduler</h2>
-    <p className='project-description'>I worked with a team of three other developers to 
-    create a Python application to help college students 
-    plan their class paths to graduation. 
+    <img src={SchedulerScreenshot} alt="" className='project-screenshot'/>
+    <p className='project-description'>An in-progress team project that allows 
+    students to schedule their paths to graduation, taking into account seasonal 
+    course offerings, course prerequisites/corequisites, and a given student's 
+    previously-taken courses. Incorporates numerous advanced features, including 
+    multiple AI modules, automatic installers and updates, web crawler modules, 
+    and more! Developed skills: Python, regex, graph theory, and web crawling.
     </p>
     <p className='project-description'>See the entire codebase on <a href="https://github.com/austinProGit/scheduler">my GitHub.</a></p>
-    <img src={SchedulerScreenshot} alt="" className='project-screenshot'/>
-    
     </>
   );
 };

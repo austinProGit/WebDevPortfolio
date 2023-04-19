@@ -7,6 +7,8 @@ import '../sass/App.scss';
 import Hangman from '../components/Projects/Hangman';
 import ToDo from '../components/Projects/ToDo';
 import Scheduler from './Projects/Scheduler';
+import Snake from './Projects/Snake';
+import TrashBusters from './Projects/TrashBusters'
 
 const Projects = (props) => (
     <>
@@ -16,14 +18,13 @@ const Projects = (props) => (
                     <Col><h3 className='section-title' id='projects-title'>Projects</h3></Col>
                 </Row>
                 <Row className='project-row'>
-                    <Col className='project'><Hangman></Hangman></Col>
-                    <Col className='project'>Animal Pic App</Col>
-                    <Col className='project'>Google Clone with Perfect Lighthouse Score</Col>
+                    <Col className='project'><TrashBusters /></Col>
+                    <Col className='project'><Scheduler></Scheduler></Col>
                 </Row>
                 <Row className='project-row'>
                     <Col className='project'><ToDo></ToDo></Col>
-                    <Col className='project'><Scheduler></Scheduler></Col>
-                    <Col className='project'>Player Versus</Col>
+                    <Col className='project'><Hangman /></Col>
+                    <Col className='project'><Snake /></Col>
                 </Row>
             </Container>
         </div>

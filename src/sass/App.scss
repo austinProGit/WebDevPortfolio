@@ -1,8 +1,9 @@
-// Root
+// // Root
 
 :root {
     --dark-mode-gray: rgb(64, 64 ,64);
     --light-mode-offwhite: #56585a4d;
+    --light-mode-bg-color: #FAECD2;
   }
 
 // Navbar
@@ -10,18 +11,12 @@
 #navigation-bar {
     color: white;
     background-color: var(--dark-mode-gray);
+    width: 100%;
 }
 
 .navbar-brand {
-    margin-left: 50px;
-    font-size: xx-large;
+    margin-left: 15px;
     color: white;
-}
-
-.navbar-links {
-    margin-right: 200px;
-    font-size: xx-large;
-    margin-left: 50px;
 }
 
 .navbar-link {
@@ -42,12 +37,24 @@
     pointer-events: none;
 }
 
+// Dark/light mode button
+
+#mode-btn-container {
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    #mode-btn-container {
+      display: none;
+    }
+  }
+
 // Portrait
 
 .portrait-container {
     display: flex;
     justify-content: center;
-    height: 500px;
+    height: 400px;
     margin-top: 2em;
 }
 
@@ -71,9 +78,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px grey;
     background-color: var(--light-mode-offwhite);
-    width: 50%;
-    max-width: 1000px;
-    min-width: 400px;
+    max-width: 600px;
     font-size: x-large;
 }
 
@@ -83,9 +88,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px grey;
     background-color: var(--dark-mode-gray);
-    width: 50%;
-    max-width: 1000px;
-    min-width: 400px;
+    max-width: 600px;
     font-size: x-large;
     color: white;
 }
@@ -111,27 +114,29 @@
 // Skills
 
 #light .skills-container {
-    box-shadow: 5px 5px 5px 10px grey;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
-    max-width: 1000px;
-    min-width: 500px;
+    box-shadow: 5px 5px 5px 5px grey;
+    margin: 1em;
+    padding: 1em;
+    width: 92%;
+    max-width: 1500px;
     border-radius: 10px;
     background-color: var(--light-mode-offwhite);
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 #dark .skills-container {
     box-shadow: 5px 5px 5px 10px grey;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
-    max-width: 1000px;
-    min-width: 500px;
+    margin: 1em;
+    padding: 1em;
+    width: 92%;
+    max-width: 1500px;
     border-radius: 10px;
     background-color: var(--dark-mode-gray);
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-bar {
@@ -139,7 +144,7 @@
     box-shadow: 10px 10px 5px grey;
 }
 
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1100px) {
     .skill-label {
         display: none;
     }
@@ -153,36 +158,43 @@
 }
 
 .skill-row {
-    margin: 10px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .skills-container img {
-    max-height: 50px;
+    height: 50px;
     float: left;
 }
 
 // Projects
 
+#projects {
+    display: flex;
+    justify-content: center;
+}
+
 #light #projects-container {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 95%;
-    background-color: white;
+    width: 92%;
+    background-color: var(--light-mode-bg-color);
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 #dark #projects-container {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 95%;
+    width: 92%;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #light .project {
     box-shadow: 5px 5px 5px 5px grey;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 10px;
     margin: 20px;
     background-color: var(--light-mode-offwhite);
@@ -191,8 +203,6 @@
 
 #dark .project {
     box-shadow: 5px 5px 5px 5px grey;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 10px;
     margin: 20px;
     background-color: var(--dark-mode-gray);
@@ -208,6 +218,18 @@
 }
 
 @media (max-width: 1450px) {
+    #light .project {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    #dark .project {
+        margin: 0;
+        margin-bottom: 30px;
+      }
+  }
+
+@media (max-width: 1450px) {
     .project-row {
       flex-direction: column;
     }
@@ -221,8 +243,9 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px grey;
     margin-top: 50px;
-    width: 50%;
-    min-width: 500px;
+    width: 92%;
+    max-width: 1000px;
+    min-width: 320px;
     font-size: x-large;
 }
 
@@ -232,8 +255,9 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px grey;
     margin-top: 50px;
-    width: 50%;
-    min-width: 500px;
+    width: 92%;
+    max-width: 1000px;
+    min-width: 320px;
     font-size: x-large;
     color: white;
 }
@@ -264,7 +288,7 @@
 // Light/Dark Mode
 
 #light {
-    background-color: white;
+    background-color: #FAECD2;
 }
 
 #dark {

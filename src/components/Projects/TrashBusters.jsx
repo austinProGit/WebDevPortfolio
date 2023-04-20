@@ -4,11 +4,6 @@ import TrashBustersScreenshot from '../../images/TrashBusters.png';
 const TrashBusters = () => {
 
   return (
-    // title
-    // description
-    // skills
-    // hosted link
-    // repo
     <>
     <h2 className='section-title'>TrashBusters</h2>
     <a href="https://trashbusters-3ag6.onrender.com"><img src={TrashBustersScreenshot} alt="" className='project-screenshot'/></a>

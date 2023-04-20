@@ -14,7 +14,9 @@ const Scheduler = () => {
     multiple AI modules, automatic installers and updates, web crawler modules, 
     and more! Developed skills: Python, regex, graph theory, and web crawling.
     </p>
-    <p className='project-description'>See the entire codebase on <a href="https://github.com/austinProGit/scheduler">my GitHub.</a></p>
+    <p className='project-description'>See the entire codebase on my&nbsp;
+      <a href="https://github.com/austinProGit/scheduler" target="_blank" rel="noopener noreferrer">GitHub.</a>
+    </p>
     </>
   );
 };

@@ -14,7 +14,7 @@ const TrashBusters = () => {
     descriptions for cleanup sites, and delete pins once trash sites have been cleaned. Developed skills include: MERN stack, 
     multi-repo integrations, deployment, environment variables, and automated testing.
 
-    ***Please note: due to free testing, this app may take up to five minutes to load.***
+    ***Please note: due to free hosting, this app may take up to five minutes to load.***
     </p>
     <p className='project-description'>Check out my project hosted on&nbsp;
       <a href="https://trashbusters-3ag6.onrender.com" target="_blank" rel="noopener noreferrer">Render.</a>

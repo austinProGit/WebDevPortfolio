@@ -6,7 +6,9 @@ const Scheduler = () => {
   return (
     <>
     <h2 className='section-title'>Scheduler</h2>
-    <img src={SchedulerScreenshot} alt="" className='project-screenshot'/>
+    <a href="https://github.com/austinProGit/scheduler" target="_blank" rel="noopener noreferrer">
+      <img src={SchedulerScreenshot} alt="" className='project-screenshot'/>
+    </a>
     <p className='project-description'>An in-progress team project that allows 
     students to schedule their paths to graduation, taking into account seasonal 
     course offerings, course prerequisites/ corequisites, and a given student's 

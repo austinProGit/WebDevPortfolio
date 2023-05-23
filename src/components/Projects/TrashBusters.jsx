@@ -16,12 +16,17 @@ const TrashBusters = () => {
 
     ***Please note: due to free hosting, this app may take up to five minutes to load.***
     </p>
+    <p className='project-description'>Check out the <a href="https://github.com/austinProGit/trashbusters_frontend" target="_blank" rel="noopener noreferrer">frontend</a> and&nbsp;
+      <a href="https://github.com/austinProGit/trashbusters_backend" target="_blank" rel="noopener noreferrer">backend</a> codebases.
+    </p>
+{/*     
     <p className='project-description'>Check out my project hosted on&nbsp;
       <a href="https://trashbusters-3ag6.onrender.com" target="_blank" rel="noopener noreferrer">Render.</a>
-    </p>
-    
+    </p> */}
     </>
   );
 };
+// https://github.com/austinProGit/trashbusters_frontend
+// https://github.com/austinProGit/trashbusters_backend
 
 export default TrashBusters;
